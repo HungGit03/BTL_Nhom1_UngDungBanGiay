@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintBaseline_toTopOf="parent"
+        android:id="@+id/toolbardetail"
+        app:title="Chi tiết sản phẩm"
+        android:background="#B2B222"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <FrameLayout
+            android:id="@+id/framecart"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_width="55dp"
+            android:layout_height="?attr/actionBarSize">
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/menu_sl"
+                android:layout_gravity="top|right"
+                android:layout_width="28dp"
+                android:layout_height="28dp"/>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_shopping_cart_24"
+                />
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/layout_detail1"
+        app:layout_constraintTop_toBottomOf="@id/toolbardetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/newicon_w512" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txttenspdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tên sp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtgiadetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Giá"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtgiamgia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtGiagiamgia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/spinnerdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp" />
+
+            <Button
+                android:id="@+id/bt_giohang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#ff44"
+                android:text="thêm vào giỏ"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_detail1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginTop="5dp"
+            android:text="Mô tả chi tiết"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtmotadetail"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

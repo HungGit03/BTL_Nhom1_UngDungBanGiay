@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingAppActivity"
+    android:background="@color/iconpeson">
+
+    <include layout="@layout/toobar"/>
+
+    <TextView
+        android:id="@+id/tv_tttk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="Thông tin tài khoản"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/draw_line"/>
+
+    <TextView
+        android:id="@+id/tv_dangxuat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:text="Đăng xuất"
+        android:gravity="center"/>
+
+</LinearLayout>

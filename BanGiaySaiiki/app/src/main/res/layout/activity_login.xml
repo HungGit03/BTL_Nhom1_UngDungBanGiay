@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Đăng nhập"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_TenDangNhap"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Số điện thoại"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"/>
+    <EditText
+        android:id="@+id/et_MatKhau"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Nhập mật khẩu"
+        android:password="true"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        tools:ignore="Deprecated" />
+    <Button
+        android:id="@+id/bt_DangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Đăng nhập"/>
+    <TextView
+        android:id="@+id/tv_QuenMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu?"
+        android:padding="8dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/tv_TaoTaiKhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo tài khoản."
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+
+
+</LinearLayout>

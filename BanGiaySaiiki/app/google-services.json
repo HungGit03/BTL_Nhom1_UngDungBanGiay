@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "983486393566",
+    "project_id": "bangiaysaiiki",
+    "storage_bucket": "bangiaysaiiki.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983486393566:android:0700009581cebe9514a64f",
+        "android_client_info": {
+          "package_name": "com.example.bangiaysaiiki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983486393566-9nuh7kjp2oqjf7r0tj5ligooo3k6pomc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bangiaysaiiki",
+            "certificate_hash": "04c4beb9b547498fd4fdbec7c6f3f5d971164097"
+          }
+        },
+        {
+          "client_id": "983486393566-2cpop4kfl3tfglm24mgaanru9dihp48b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA8ch6fqVbozTTc1dYif0ygoJph0f-RR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983486393566-2cpop4kfl3tfglm24mgaanru9dihp48b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
